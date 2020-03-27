@@ -9,13 +9,14 @@ import { Almaneces } from "./../interfaces/almaneces";
 export class ApiservicesService {
   private allowCors= 'https://cors-anywhere.herokuapp.com/';
   private api ='http://erickps-001-site1.ctempurl.com/api';
+
   constructor(
     private http: HttpClient,
     
   ) {
       
    }
-
+  
    getAlmacen(){
       const url= `${this.allowCors}${this.api}/almacenes/`;
      return this.http.get<Almaneces[]>(url);

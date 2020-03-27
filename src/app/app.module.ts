@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AgregarAlmacenComponent } from './Componentes/Almacen/agregar-almacen/agregar-almacen.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AgregarAlmacenComponent
   ],
   imports: [
     BrowserModule,

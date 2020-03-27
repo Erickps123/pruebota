@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <h3>Agregar Almacen</h3>
+   
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-6">
+            <h5 class="text-primary">Selecciona el Almacen</h5>
+            
+            <form class="row">
+                <select  name="select" [(ngModel)] = "seleccionado" class="col-9 form-control">
+
+                    <option [value]="name.ID" *ngFor="let Almacen of Almacenes" >
+                        {{AlmacenNombre}}
+                    </option>
+                </select>
+            </form>
+        </div>
+    </div>
+</div>
